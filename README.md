@@ -38,7 +38,7 @@ cd <your-repo-name>
 ``` bash
 mvn clean package
 ```
-Build and Push Docker Image
+### Build and Push Docker Image
 ``` bash
 docker build -t <your-dockerhub-username>/stockmanager:latest .
 docker push <your-dockerhub-username>/stockmanager:latest
@@ -47,6 +47,35 @@ docker push <your-dockerhub-username>/shopfront:latest
 docker build -t <your-dockerhub-username>/productcatalogue:latest .
 docker push <your-dockerhub-username>/productcatalogue:latest
 ```
+### Start Minikube
+``` bash
+minikube start --driver=docker
+kubectl get nodes
+```
+### Deploy the Application on Kubernetes
+``` bash
+kubectl apply -f k8s/stockmanager-deployment.yml
+```
+
+### Verify Deployment
+``` bash
+kubectl get pods
+kubectl get svc
+kubectl describe pod <pod-name>
+```
+### Access the Application
+``` bash
+minikube service stockmanager --url
+or http://<your-ec2-public-ip>:<nodeport>
+```
+### Screenshots
+. Maven build success
+. Docker build sucess
+. Deployment success
+. Kubernetes dashbord
+. Application running
+
+
 
 
 
