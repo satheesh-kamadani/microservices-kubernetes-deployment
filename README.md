@@ -27,11 +27,11 @@ Each microservice is:
 
 ---
 ## Screenshots
- 1. Maven build success
- 2. Docker build sucess
- 3. Deployment success
- 4. Kubernetes dashbord
- 5. Application running
+ 1. Maven build success(screeshots/productcatalogue.png, screenshots/shopfront.png)
+ 2. Docker build sucess(screenshots/docker_images_microservices.png)
+ 3. Deployment success(screenshots/Pods_deployment_success.png)
+ 4. Kubernetes dashbord(screenshots/kubernetes_dashboard)
+ 5. Application running(screenshots/application_running)
 
 ## ⚙️ Setup and Deployment Steps
 
