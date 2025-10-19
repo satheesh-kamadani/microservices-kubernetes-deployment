@@ -26,6 +26,12 @@ Each microservice is:
 4. **Accessed** via NodePort service endpoints exposed on the Kubernetes cluster.
 
 ---
+## Screenshots
+ 1. Maven build success
+ 2. Docker build sucess
+ 3. Deployment success
+ 4. Kubernetes dashbord
+ 5. Application running
 
 ## ⚙️ Setup and Deployment Steps
 
@@ -68,12 +74,7 @@ kubectl describe pod <pod-name>
 minikube service stockmanager --url
 or http://<your-ec2-public-ip>:<nodeport>
 ```
-### Screenshots
-. Maven build success
-. Docker build sucess
-. Deployment success
-. Kubernetes dashbord
-. Application running
+
 
 
 
